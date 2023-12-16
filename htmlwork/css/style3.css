@@ -1,0 +1,17 @@
+#box1{
+    background-color: cyan;
+    color: aliceblue;
+    height: 500px;
+    width: 800px;
+    margin: auto;
+
+}
+
+#box1 h1{text-align: center;}
+
+#box1 p{text-align: center;}
+
+#box1 ul li{
+    list-style: none;
+    padding-left: 200px;
+}

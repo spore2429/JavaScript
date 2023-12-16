@@ -1,0 +1,22 @@
+div>b{
+    cursor: pointer;
+    font-size: 20pt;
+    width: 500px;
+}
+
+
+div.board.one{
+    color: forestgreen;
+    font-size: 12pt;
+   
+}
+
+div.board.two{
+    color: fuchsia;
+    font-size: 12pt;
+}
+
+div.board.three{
+    color: royalblue;
+    font-size: 12pt;
+}

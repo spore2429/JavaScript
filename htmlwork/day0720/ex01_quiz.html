@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/buttonStyle.css">
+
+    <!--버튼2개에 하나는 food,하나는 연예인 이라고 쓰고 css는 우리가 만든 buttonStyle에서 적용한다
+        food버튼을 클릭하면 음식사진을 div에 출력하고 연예인을 클릭하면 연예인 한명을 출력한다
+        (단,2번모두 음식을 출력할까요? 라고 물어보고 예를 클릭시에만 이미지 출력한다)-->
+
+    <!--이미지출력이라는 버튼을 만들고.. 클릭시 prompt로 "출력할 이미지의 인덱스 번호를 입력해주세요 라고 출력후
+        0번을 입력하면 0번이미지 출력(총 5개의 이미지를 imgArr이라는 배열형태 넣어놓고 다양한 폴더의 이미지 5개배열에 넣어주세요
+        (단 배열인덱스에 없는 값 입력시 div에 "해당번호는 없습니다" 라고출력)-->
+    <style>
+          #result{
+            top: 200px;
+            width: 500px;
+            position: absolute;
+        
+          }
+    </style>
+
+    <script>
+        window.onload = function () {
+            //음식,연예인
+            var food = document.getElementById("food");
+            var talent = document.getElementById("talent");
+
+            r=document.getElementById("result");
+
+            food.onclick = function () {
+                var a = confirm("음식을 출력할까요?");
+                if (a) {
+
+                    r.innerHTML = "<img src='../이미지/Food/1.jpg'>";
+                }
+                else
+                    alert("취소합니다")
+            }
+
+            talent.onclick = function () {
+
+                var b = confirm("연예인을 출력할까요?");
+                if (b) {
+                    r.innerHTML = "<img src='../이미지/연예인사진/1.jpg'>";
+
+                }
+                else
+                    alert("취소합니다");
+            }
+
+            //이미지출력(배열)
+            var imgarr = new Array();
+            imgarr.push("../이미지/연예인사진/1.jpg");
+            imgarr.push("../이미지/연예인사진/2.jpg");
+            imgarr.push("../이미지/연예인사진/3.jpg");
+            imgarr.push("../이미지/연예인사진/4.jpg");
+            imgarr.push("../이미지/연예인사진/5.jpg");
+
+
+            img1.onclick = function () {
+                var idx = prompt("출력할 이미지의 인덱스 번호를 입력해주세요");
+                if (idx<0 || idx>4) {
+                    r.innerHTML="해당번호는 없습니다";
+                }
+                else
+                    r.innerHTML="<img src='"+imgarr[idx]+"'>";
+            }
+
+
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <button type="button" id="food" class="btn btn-blue">음식</button>
+    <button type="button" id="talent" class="btn btn-green">연예인</button>
+    <button type="button" id="img1" class="btn btn-orange">이미지출력</button>
+    <div id="result"></div>
+    
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: #222;
+    height: 100%
+}
+
+#container{
+    position: absolute;
+    margin-left: -400px;
+    width: 900px;
+    height: 100%;
+    background: #fff;
+    left: 50%;
+}
+
+aside{
+    float: left;
+    width: 300px;
+    padding: 20px 50px;
+    height: 100%;
+    background: lightgray;
+}
+
+aside>div>img{
+    width: 150px;
+    height: 200px;
+    border-radius: 150px;
+}
+
+#main{
+    float: right;
+    padding: 50px;
+    width: 600px;
+    height: 100%;
+
+
+}
+

@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Gaegu&family=Nanum+Gothic&family=Nanum+Pen+Script&family=Stylish&display=swap');
+body{
+    font-family: 'Gaegu';
+}
+
+.btn{
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.btn-green{
+    background-color: greenyellow;
+    color: white;
+    font-size: 12pt;
+}
+
+.btn-blue{
+    background-color: blue;
+    color: yellow;
+    font-size: 12pt;
+}
+
+.btn-orange{
+    background-color: orange;
+    color: darkgreen;
+    font-size: 12pt;
+}
+
+.btn-brown{
+    background-color: burlywood;
+    color: cyan;
+    font-size: 12pt;
+}
